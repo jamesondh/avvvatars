@@ -1,5 +1,5 @@
-/// <reference types="react" />
-declare type Style = 'character' | 'shape';
+import * as React from "react";
+declare type Style = "character" | "shape";
 interface Params {
     displayValue?: string;
     value: string;
@@ -11,5 +11,5 @@ interface Params {
     borderColor?: string;
     radius?: number;
 }
-export default function Avvvatars(params: Params): JSX.Element;
-export {};
+export default function Avvvatars(params: Params): React.JSX.Element;
+export { createAvatar } from "./headless";
